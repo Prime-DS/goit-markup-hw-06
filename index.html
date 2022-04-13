@@ -408,6 +408,20 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-form">
+                <form >
+                   <b class="footer-form-title" for="footer-emai">Подпишитесь на рассылку</b>
+                   <div class="form-block">
+                       <input class="footer-form-input" type="email" placeholder="E-mail">
+                       <button class="footer-form-btn" type="submit">Подписаться
+                           <svg class="footer-form-icon" width="24" height="24">
+                               <use  href="./images/icons.svg#icon-icon-send"></use>
+                           </svg>
+                       </button>
+                   </div>
+                </form>
+            </div>
            
         </div>
         
@@ -419,7 +433,7 @@
         <div class="modal-wrapper">
 
             <button class="modal-btn" type="button" data-modal-close>
-                <svg width="14" height="14">
+                <svg class="modal-btn-svg" width="14" height="14" >
                     <use href="./images/icons.svg#icon-btn-close-1"></use>
                 </svg>
             </button>
@@ -453,9 +467,16 @@
                     <textarea class="form-textarea" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                 </div>
 
-                <span >Соглашаюсь с рассылкой и принимаю
-                    <a class="form-link" href="">Условия договора</a>
-                </span>
+                <div class="form-field-checkbox">
+                    <label class="checkbox-label">
+                        <input class="checkbox" type="checkbox">
+                        <span class="icon-checkbox">
+                        </span>Соглашаюсь с рассылкой и принимаю 
+                        <a class="form-link" href=""> Условия договора</a>
+                    </label>
+                </div>
+
+                
 
                 <button class="btn-form" type="submit">Отправить</button>
 
