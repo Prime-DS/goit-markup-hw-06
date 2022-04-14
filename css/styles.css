@@ -863,7 +863,8 @@ a.logo {
 }
 
 
-.modal-btn:hover {
+.modal-btn:hover,
+.modal-btn:focus {
   fill: #2196f3;
 }
 
@@ -874,8 +875,6 @@ a.logo {
   padding: px;
 
   width: 448px;
-  
-  /* border: solid 1px red; */
 }
 
 .form-title {
@@ -888,7 +887,7 @@ a.logo {
 }
 
 .form-field {
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .form-label {
@@ -901,9 +900,13 @@ a.logo {
   line-height: 14px;
 }
 
+.form-span {
+  position: relative;
+}
+
 
 .form-input {
-  margin-bottom: 10px;
+  
 padding-left: 42px;
   height: 40px;
   width: 100%;
@@ -978,12 +981,13 @@ padding-left: 42px;
 }
 
 .checkbox:checked + .icon-checkbox {
-  border-color: #2196f3;
+  border-color: var(--accent-color);
   background-image: url(../images/icon-check2.svg);
   background-size: contain;
+}
 
-  
-  
+.checkbox:focus +.icon-checkbox {
+  border-color: var(--accent-color);
 }
 
 .form-link {
